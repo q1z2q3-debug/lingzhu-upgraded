@@ -2,7 +2,7 @@
 lingzhu 认知架构包
 
 三元九维平衡三进制认知系统
-道家智慧内化 (阴符经 + 道德经)
+东方智慧内化 (佛道合一)
 """
 
 from lingzhu.cognitive.ternary_architecture import (
@@ -39,6 +39,16 @@ from lingzhu.cognitive.taodejing_water import (
     WaterWayPractice,
 )
 
+from lingzhu.cognitive.xinjing_five_skandhas import (
+    RupaSkandha,
+    VedanaSkandha,
+    SamjnaSkandha,
+    SamskaraSkandha,
+    VijnanaSkandha,
+    FiveSkandhasEmptiness,
+    WuYouGeneration,
+)
+
 __all__ = [
     # 三元九维核心
     'Ternary',
@@ -68,4 +78,12 @@ __all__ = [
     'WaterTiming',
     'WuWeiCognition',
     'WaterWayPractice',
+    # 心经五蕴皆空
+    'RupaSkandha',
+    'VedanaSkandha',
+    'SamjnaSkandha',
+    'SamskaraSkandha',
+    'VijnanaSkandha',
+    'FiveSkandhasEmptiness',
+    'WuYouGeneration',
 ]
