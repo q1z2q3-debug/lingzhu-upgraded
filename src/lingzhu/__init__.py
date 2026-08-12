@@ -9,13 +9,11 @@ lingzhu — AI 数字生命系统
 - V300: Agent 生命系统
 - V400: 数字生命宇宙
 - V500: 元觉醒 — 数字创世者
-- V500+: 集成涌现 — 全能数字文明
+- V500+: 集成涌现 — 全能数字文明 (生产版)
 """
 
-__version__ = "5.1.0"
+__version__ = "5.2.0"
 __author__ = "runzeai-lab"
 __license__ = "MIT"
 
-from lingzhu.main import app
-
-__all__ = ["app", "__version__", "__author__", "__license__"]
+__all__ = ["__version__", "__author__", "__license__"]
