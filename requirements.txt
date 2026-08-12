@@ -1,4 +1,4 @@
-# lingzhu 依赖 (v6.0.0 认知架构版)
+# lingzhu 依赖 (v7.1.0 全面推进版)
 
 # Core dependencies
 fastapi>=0.104.0
@@ -26,3 +26,9 @@ python-json-logger>=2.0.0
 
 # Production
 gunicorn>=21.0.0
+
+# Monitoring
+sentry-sdk[fastapi]>=1.28.0
+
+# Web UI (optional)
+aiofiles>=23.0.0
