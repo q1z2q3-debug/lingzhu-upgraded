@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  lingzhu:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DATABASE_URL=sqlite+aiosqlite:///./data/lingzhu.db
+      - LOG_LEVEL=INFO
+    volumes:
+      - lingzhu_data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  lingzhu_data:
