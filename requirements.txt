@@ -1,3 +1,5 @@
+# lingzhu 依赖 (v6.0.0 认知架构版)
+
 # Core dependencies
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
